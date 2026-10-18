@@ -5,12 +5,12 @@
   },
   "greetings": {
     "en": "Hello",
-    "he": "שלום",
-    "ar": "مرحبا",
-    "zh": "你好",
-    "ja": "こんにちは",
-    "cs": "Příliš žluťoučký kůň",
-    "launch": "🚀"
+    "he": "שלום לכולם",
+    "ar": "مرحبا بكم",
+    "zh": "你好，朋友们",
+    "ja": "こんにちは、皆さん",
+    "cs": "Ahoj, příteli! Řeka je čistá",
+    "launch": "🚀 Go"
   },
   "labels": {
     "ok": "OK",

@@ -8,8 +8,8 @@ set OUTDIR=bin\%CONFIG%
 if not exist "%OUTDIR%" mkdir "%OUTDIR%"
 
 echo Building %CONFIG% ...
-msbuild Sample.sln /p:Configuration=%CONFIG% /m
-if errorlevel 1 goto :failed
+msbuild Sample.sln /p:Configuration=%CONFIG% /m /nologo /t:Rebuild
+if %errorlevel% neq 0 goto :failed
 
 echo Copying output ...
 xcopy /Y /Q "src\Sample\bin\%CONFIG%\*.*" "%OUTDIR%\" >nul

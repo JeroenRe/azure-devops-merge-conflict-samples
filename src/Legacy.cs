@@ -7,12 +7,12 @@ namespace Samples.Src
     {
         public static string FormatReport(string title, int count)
         {
-            return title + ": " + count + " items";
+            return title + ": " + count + " items (" + DateTime.Now.Year + ")";
         }
 
         public static string FormatTotal(int total)
         {
-            return "Total = " + total;
+            return "Total: " + total;
         }
     }
 }
