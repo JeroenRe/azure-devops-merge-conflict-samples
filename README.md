@@ -37,11 +37,12 @@ what a tool did to it.
 ## How to use it
 
 1. Create a free Azure DevOps organization, or use a throwaway test project. Do not use a real project.
-2. **Repos → Import repository → Git**, clone URL:
+2. Go to **Repos → Files**, open the repository list at the top and choose **Import repository** (in an empty project
+   the button is on the page itself). Type: Git, clone URL:
    `https://github.com/JeroenRe/azure-devops-merge-conflict-samples.git`
    Check that both branches, `main` and `feature/sample-conflicts`, arrived.
-3. Create a pull request from `feature/sample-conflicts` into `main`. It reports conflicts in the files above (Azure
-   DevOps may count the rename/rename and edit/delete differently from git).
+3. Create a pull request from `feature/sample-conflicts` into `main`. Azure DevOps reports the same 13 conflicts as git
+   (checked on Azure DevOps Services in October 2026).
 4. Resolve the conflicts with the tool you want to test. Resolve them the way you normally would; the check does not
    care whether you took main's side, feature's side or a mix.
 5. Verify the result. Clone your imported repository and run the script in the clone (Python 3.8 or newer and git, no
@@ -121,8 +122,8 @@ macOS may rewrite line endings behind your back.
 **The lockfile is synthetic.** The package names and `integrity` hashes are generated; do not run `npm ci` on it. It is
 only meant to have the size and shape of a real lockfile.
 
-**Limits.** All 13 cases conflict with plain git (merge-ort, tested with git 2.43). Azure DevOps uses its own merge machinery and may list or
-classify some of them differently. Passing these cases does not prove a tool is safe; failing one points at a concrete problem worth a closer look.
+**Limits.** All 13 cases conflict with plain git (merge-ort, tested with git 2.43) and in Azure DevOps Services, which
+lists them as 10 edit/edit, one add/add, one edit/delete and one rename (1 to 2). Passing these cases does not prove a tool is safe; failing one points at a concrete problem worth a closer look.
 
 ## Reporting problems
 
