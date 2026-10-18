@@ -6,6 +6,6 @@ APP="sample-site"
 TARGET="deploy@example.org"
 
 echo "Deploying ${APP} to ${TARGET}"
-rsync -az --delete ./dist/ "${TARGET}:/var/www/${APP}/"
-ssh "${TARGET}" "sudo systemctl restart ${APP}"
+rsync -az --delete --exclude "*.map" ./dist/ "${TARGET}:/var/www/${APP}/"
+ssh "${TARGET}" "sudo systemctl reload ${APP}"
 echo "Done"

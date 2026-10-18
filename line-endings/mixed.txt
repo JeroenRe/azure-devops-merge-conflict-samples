@@ -11,10 +11,10 @@
 11 [CRLF] Version 2.0 introduced the plugin system.
 12 [CRLF] Version 2.1 added dark mode.
 13 [CRLF] Version 2.2 fixed a crash on exit.
-14 [CRLF] Base text of line 14.
-15 [CRLF] Base text of line 15.
-16 [LF] Base text of line 16.
-17 [LF] Base text of line 17.
+14 [CRLF] Line 14 as changed on main.
+15 [CRLF] Line 15 as changed on main.
+16 [LF] Line 16 as changed on main.
+17 [LF] Line 17 as changed on main.
 18 [LF] Version 3.0 dropped Windows 7 support.
 19 [LF] Version 3.1 added the export wizard.
 20 [LF] Version 3.2 fixed the export wizard.

@@ -16,9 +16,9 @@ namespace Samples.Encoding
 
         public static string Banner()
         {
-            var title = "Grüße aus Köln";
-            var price = "Preis: 5 €";
-            var note = "naïve Beispiele";
+            var title = "Grüße aus München";
+            var price = "Preis: 7,50 €";
+            var note = "naïve Beispiele (neu)";
             var hint = "Bitte Namen eingeben";
             return string.Join(" | ", title, price, note, hint);
         }
