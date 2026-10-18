@@ -1,0 +1,3 @@
+# Never convert line endings (or apply any other text filter) on checkout or commit:
+# the samples contain CRLF, LF and mixed files that must stay byte for byte as they are.
+* -text

@@ -1,0 +1,19 @@
+{
+  "app": {
+    "name": "Polyglot Sample",
+    "version": "2.1.0"
+  },
+  "greetings": {
+    "en": "Hello",
+    "he": "שלום",
+    "ar": "مرحبا",
+    "zh": "你好",
+    "ja": "こんにちは",
+    "cs": "Příliš žluťoučký kůň",
+    "launch": "🚀"
+  },
+  "labels": {
+    "ok": "OK",
+    "cancel": "Cancel"
+  }
+}
